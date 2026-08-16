@@ -5,8 +5,9 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch . --ext ts --exec tsx index.ts",
-    "seed": "tsx seed.ts"
+  "dev": "tsx index.ts",
+  "start": "tsx index.ts"
+
   },
   "author": "shabd",
   "license": "ISC",
