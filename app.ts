@@ -8,15 +8,17 @@ import bookingRoutes from "./routes/bookings.js";
 
 const app = express();
 
-const allowedOrigin =
-  process.env.CLIENT_URL || "http://localhost:5173";
 
-app.use(
-  cors({
-    origin: allowedOrigin,
-    credentials: true,
-  }),
-);
+
+app.use(cors({
+
+  origin: "https://eventora-ruddy.vercel.app",
+
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+
+  allowedHeaders: ["Content-Type", "Authorization"],
+
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
