@@ -5,8 +5,8 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-  "dev": "tsx index.ts",
-  "start": "tsx index.ts"
+  "dev": "node index.ts",
+  "start": "node index.ts"
 
   },
   "author": "shabd",
